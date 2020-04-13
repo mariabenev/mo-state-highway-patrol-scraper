@@ -1,0 +1,1416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+	
+	
+	
+	
+	
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="theme/Master.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="theme/print.css" media="print">
+<!--[if IE]> <link href="theme/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+<title>Missouri State Highway Patrol - Crash Reports</title>
+
+</head>
+<body id="body" onload="document.searchForm.searchFirst.focus();">
+
+
+<div id="headerContainer">
+	<div id="headerLeft"><a href="/HP68/search.jsp">
+	<img src="https://www.mshp.dps.missouri.gov/MSHPWeb/Images/newMainHeader.jpg" alt="MSHP Emblem" name="MSHP_Emblem" />
+	</a></div>
+	<!--<div id="header">
+	  <a href="http://www.missouriamberalert.com/current.php"><img class="align" src="http://www.missouriamberalert.com/logo.php?State=MO"
+alt="Amber Alert"/></a> 
+</div>-->
+	<div id="headerRight">
+				<div class="date">
+					Printed on: <br />
+					<script type="text/javascript"><!--
+					var date = new Date()
+					var day = date.getDate()
+					var month = date.getMonth() + 1
+					var year = date.getYear()
+					
+					if(year < 2000){year = year - 100} //If 2006 is 106 instead - different browsers pull in year differently
+					if(year < 10){year = "0" + year} //Single digit year prints with 0
+
+					document.write(month + "/" + day + "/" + year)
+					--></script>
+				</div>
+	</div>
+	
+<div class="spacer">&nbsp;</div>
+</div>
+<div id="linksBar">
+				<a href="/HP68/search.jsp" class="header" accesskey="1" title="Return to the Search Page">Crash Reports Home</a> -
+				<a href="/HP68/static/Official.html" class="header" accesskey="3" title="Obtain an Official Report">Official Reports</a> - 
+				<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/PatrolDivisions/PRD/index.html" class="header" accesskey="4" title="Patrol Records Division Home Page">Patrol Records Division</a> -
+				<a href="/HP68/static/FAQ.html" class="header" accesskey="5" title="Frequently Asked Questions">FAQ's</a> -
+				<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/PatrolDivisions/PRD/index.html" class="header" accesskey="9" title="Contact Us">Contact Us </a> -
+				<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/Root/index.html" class="header" accesskey="10" title="Missouri State Highway Patrol Home Page">MSHP Home</a> - 
+				<a href="https://www.mshp.dps.missouri.gov/TR15Map/index.jsp" class="header" accesskey="11" title="Traffic Crash Maps">Traffic Crash Maps</a>
+</div>
+<div id="headerContainer">
+ <div id="headerCenter">
+			Online Traffic Crash Reports
+ </div>
+</div>
+<div id="navHeader">
+<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/Search/search.html"> Search </a> |<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/index.html"> Home </a> | <a	href="http://www.mshp.dps.missouri.gov/MSHPWeb/AboutThePatrol/contactUs.html"> Contact</a> 
+</div>
+
+	
+<div id="content">
+<br />
+<!--  <a href="http://www.mshp.dps.missouri.gov/WP03/search.jsp">Boat/Drowning Incident Reports</a>-->
+<img src="static/images/wplink1.gif" alt="Click to access Boat/Drowning Incident Reports." usemap="#wp03" />
+<map name="wp03" id="wp03">
+<area shape="poly" href="/WP03/search.jsp" alt="Boat/Drowning Incident Reports"
+	coords="12,6,34,6,87,6,135,6,136,24,135,39,123,44,105,44,84,43,44,43,24,44,13,36,12,28,12,11">
+</map>						
+<form name="searchForm" id="searchForm" action="/HP68/SearchAction" class="form" method="post">
+		<table id="searchContainer">
+			<tr>
+			<td id="leftColumn" valign="top">
+			
+				<fieldset><legend>Search Reports: </legend>	
+				
+				
+					<div class="inputError">Please fill in at least one search field.</div>
+				
+				<table id="searchTable">
+						<tr>
+							<td><label for="firstName">First Name:</label></td>
+							<td><input id="firstName" type="text" name="searchFirst"
+								class="inputText" size="20" maxlength="20" tabindex="1" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="lastName">Last Name:</label></td>
+							<td><input id="lastName" type="text" name="searchLast"
+								class="inputText" size="20" maxlength="35" tabindex="2" />
+							</td>
+						</tr>
+				
+						<tr>
+							<td><label for="county">Crash County:</label></td>
+							<td><select id="county" name="searchCounty"
+								style="width:143px" class="inputText" tabindex="3">
+								<option value=""></option>
+								<option value="Adair">Adair</option>
+								<option value="Andrew">Andrew</option>
+								<option value="Atchison">Atchison</option>
+								<option value="Audrain">Audrain</option>
+								<option value="Barry">Barry</option>
+								<option value="Barton">Barton</option>
+								<option value="Bates">Bates</option>
+								<option value="Benton">Benton</option>
+								<option value="Bollinger">Bollinger</option>
+								<option value="Boone">Boone</option>
+								<option value="Buchanan">Buchanan</option>
+								<option value="Butler">Butler</option>
+								<option value="Caldwell">Caldwell</option>
+								<option value="Callaway">Callaway</option>
+								<option value="Camden">Camden</option>
+								<option value="Cape Girardeau">Cape Girardeau</option>
+								<option value="Carroll">Carroll</option>
+								<option value="Carter">Carter</option>
+								<option value="Cass">Cass</option>
+								<option value="Cedar">Cedar</option>
+								<option value="Chariton">Chariton</option>
+								<option value="Christian">Christian</option>
+								<option value="Clark">Clark</option>
+								<option value="Clay">Clay</option>
+								<option value="Clinton">Clinton</option>
+								<option value="Cole">Cole</option>
+								<option value="Cooper">Cooper</option>
+								<option value="Crawford">Crawford</option>
+								<option value="Dade">Dade</option>
+								<option value="Dallas">Dallas</option>
+								<option value="Daviess">Daviess</option>
+								<option value="Dekalb">De Kalb</option>
+								<option value="Dent">Dent</option>
+								<option value="Douglas">Douglas</option>
+								<option value="Dunklin">Dunklin</option>
+								<option value="Franklin">Franklin</option>
+								<option value="Gasconade">Gasconade</option>
+								<option value="Gentry">Gentry</option>
+								<option value="Greene">Greene</option>
+								<option value="Grundy">Grundy</option>
+								<option value="Harrison">Harrison</option>
+								<option value="Henry">Henry</option>
+								<option value="Hickory">Hickory</option>
+								<option value="Holt">Holt</option>
+								<option value="Howard">Howard</option>
+								<option value="Howell">Howell</option>
+								<option value="Iron">Iron</option>
+								<option value="Jackson">Jackson</option>
+								<option value="Jasper">Jasper</option>
+								<option value="Jefferson">Jefferson</option>
+								<option value="Johnson">Johnson</option>
+								<option value="Knox">Knox</option>
+								<option value="Laclede">Laclede</option>
+								<option value="Lafayette">Lafayette</option>
+								<option value="Lawrence">Lawrence</option>
+								<option value="Lewis">Lewis</option>
+								<option value="Lincoln">Lincoln</option>
+								<option value="Linn">Linn</option>
+								<option value="Livingston">Livingston</option>
+								<option value="McDonald">McDonald</option>
+								<option value="Macon">Macon</option>
+								<option value="Madison">Madison</option>
+								<option value="Maries">Maries</option>
+								<option value="Marion">Marion</option>
+								<option value="Mercer">Mercer</option>
+								<option value="Miller">Miller</option>
+								<option value="Mississippi">Mississippi</option>
+								<option value="Moniteau">Moniteau</option>
+								<option value="Monroe">Monroe</option>
+								<option value="Montgomery">Montgomery</option>
+								<option value="Morgan">Morgan</option>
+								<option value="New Madrid">New Madrid</option>
+								<option value="Newton">Newton</option>
+								<option value="Nodaway">Nodaway</option>
+								<option value="Oregon">Oregon</option>
+								<option value="Osage">Osage</option>
+								<option value="Ozark">Ozark</option>
+								<option value="Pemiscot">Pemiscot</option>
+								<option value="Perry">Perry</option>
+								<option value="Pettis">Pettis</option>
+								<option value="Phelps">Phelps</option>
+								<option value="Pike">Pike</option>
+								<option value="Platte">Platte</option>
+								<option value="Polk">Polk</option>
+								<option value="Pulaski">Pulaski</option>
+								<option value="Putnam">Putnam</option>
+								<option value="Ralls">Ralls</option>
+								<option value="Randolph">Randolph</option>
+								<option value="Ray">Ray</option>
+								<option value="Reynolds">Reynolds</option>
+								<option value="Ripley">Ripley</option>
+								<option value="St. Charles">St. Charles</option>
+								<option value="St. Clair">St. Clair</option>
+								<option value="St. Francois">St. Francois</option>
+								<option value="St. Louis">St. Louis</option>
+								<option value="St. Louis City">St. Louis City</option>
+								<option value="Ste. Genevieve">Ste. Genevieve</option>
+								<option value="Saline">Saline</option>
+								<option value="Schuyler">Schuyler</option>
+								<option value="Scotland">Scotland</option>
+								<option value="Scott">Scott</option>
+								<option value="Shannon">Shannon</option>
+								<option value="Shelby">Shelby</option>
+								<option value="Stoddard">Stoddard</option>
+								<option value="Stone">Stone</option>
+								<option value="Sullivan">Sullivan</option>
+								<option value="Taney">Taney</option>
+								<option value="Texas">Texas</option>
+								<option value="Vernon">Vernon</option>
+								<option value="Warren">Warren</option>
+								<option value="Washington">Washington</option>
+								<option value="Wayne">Wayne</option>
+								<option value="Webster">Webster</option>
+								<option value="Worth">Worth</option>
+								<option value="Wright">Wright</option>
+								</select></td>
+						</tr>
+				
+						<tr>
+							<td><label for="troop">Troop:</label></td>
+							<td><select id="troop" name="searchTroop"
+								class="inputText" tabindex="4" style="width:143px">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+								<option value="F">F</option>
+								<option value="G">G</option>
+								<option value="H">H</option>
+								<option value="I">I</option>
+								</select></td>
+						</tr>
+				
+						<tr>
+							<td><label for="location">Crash Location:</label></td>
+							<td class="input"><input id="location"type="text" name="searchLocation"
+								class="inputText" size="20" maxlength="60" tabindex="5" /></td>
+						</tr>
+
+						<tr>
+							<td><label for="city">Person City/State:</label></td>
+							<td><input id="city" type="text" name="searchCity"
+								class="inputText" size="20" maxlength="60" tabindex="6" />
+							</td>
+						</tr>
+				
+						<tr>
+							<td><label for="date">Date:</label></td>
+							<td><select id="date" name="searchDate" tabindex="7" style="width:143px">
+									<option value=""></option>
+									<option value="04/09/2020">April 09, 2020</option><option value="04/08/2020">April 08, 2020</option><option value="04/07/2020">April 07, 2020</option><option value="04/06/2020">April 06, 2020</option><option value="04/05/2020">April 05, 2020</option><option value="04/04/2020">April 04, 2020</option><option value="04/03/2020">April 03, 2020</option><option value="04/02/2020">April 02, 2020</option><option value="04/01/2020">April 01, 2020</option><option value="03/31/2020">March 31, 2020</option><option value="03/30/2020">March 30, 2020</option><option value="03/29/2020">March 29, 2020</option><option value="03/28/2020">March 28, 2020</option><option value="03/27/2020">March 27, 2020</option><option value="03/26/2020">March 26, 2020</option><option value="03/25/2020">March 25, 2020</option><option value="03/24/2020">March 24, 2020</option><option value="03/23/2020">March 23, 2020</option><option value="03/22/2020">March 22, 2020</option><option value="03/21/2020">March 21, 2020</option><option value="03/20/2020">March 20, 2020</option><option value="03/19/2020">March 19, 2020</option><option value="03/18/2020">March 18, 2020</option><option value="03/17/2020">March 17, 2020</option><option value="03/16/2020">March 16, 2020</option><option value="03/15/2020">March 15, 2020</option><option value="03/14/2020">March 14, 2020</option><option value="03/13/2020">March 13, 2020</option><option value="03/12/2020">March 12, 2020</option><option value="03/11/2020">March 11, 2020</option><option value="03/10/2020">March 10, 2020</option><option value="03/09/2020">March 09, 2020</option><option value="03/08/2020">March 08, 2020</option><option value="03/07/2020">March 07, 2020</option><option value="03/06/2020">March 06, 2020</option><option value="03/05/2020">March 05, 2020</option><option value="03/04/2020">March 04, 2020</option><option value="03/03/2020">March 03, 2020</option><option value="03/02/2020">March 02, 2020</option><option value="03/01/2020">March 01, 2020</option><option value="02/29/2020">February 29, 2020</option><option value="02/28/2020">February 28, 2020</option><option value="02/27/2020">February 27, 2020</option><option value="02/26/2020">February 26, 2020</option><option value="02/25/2020">February 25, 2020</option><option value="02/24/2020">February 24, 2020</option><option value="02/23/2020">February 23, 2020</option><option value="02/22/2020">February 22, 2020</option><option value="02/21/2020">February 21, 2020</option><option value="02/20/2020">February 20, 2020</option><option value="02/19/2020">February 19, 2020</option><option value="02/18/2020">February 18, 2020</option><option value="02/17/2020">February 17, 2020</option><option value="02/16/2020">February 16, 2020</option><option value="02/15/2020">February 15, 2020</option><option value="02/14/2020">February 14, 2020</option><option value="02/13/2020">February 13, 2020</option><option value="02/12/2020">February 12, 2020</option><option value="02/11/2020">February 11, 2020</option><option value="02/10/2020">February 10, 2020</option><option value="02/09/2020">February 09, 2020</option><option value="02/08/2020">February 08, 2020</option><option value="02/07/2020">February 07, 2020</option><option value="02/06/2020">February 06, 2020</option><option value="02/05/2020">February 05, 2020</option><option value="02/04/2020">February 04, 2020</option><option value="02/03/2020">February 03, 2020</option><option value="02/02/2020">February 02, 2020</option><option value="02/01/2020">February 01, 2020</option><option value="01/31/2020">January 31, 2020</option><option value="01/30/2020">January 30, 2020</option><option value="01/29/2020">January 29, 2020</option><option value="01/28/2020">January 28, 2020</option><option value="01/27/2020">January 27, 2020</option><option value="01/26/2020">January 26, 2020</option><option value="01/25/2020">January 25, 2020</option><option value="01/24/2020">January 24, 2020</option><option value="01/23/2020">January 23, 2020</option><option value="01/22/2020">January 22, 2020</option><option value="01/21/2020">January 21, 2020</option><option value="01/20/2020">January 20, 2020</option><option value="01/19/2020">January 19, 2020</option><option value="01/18/2020">January 18, 2020</option><option value="01/17/2020">January 17, 2020</option><option value="01/16/2020">January 16, 2020</option><option value="01/15/2020">January 15, 2020</option><option value="01/14/2020">January 14, 2020</option><option value="01/13/2020">January 13, 2020</option><option value="01/12/2020">January 12, 2020</option><option value="01/11/2020">January 11, 2020</option><option value="01/10/2020">January 10, 2020</option><option value="01/09/2020">January 09, 2020</option><option value="01/08/2020">January 08, 2020</option><option value="01/07/2020">January 07, 2020</option><option value="01/06/2020">January 06, 2020</option><option value="01/05/2020">January 05, 2020</option><option value="01/04/2020">January 04, 2020</option><option value="01/03/2020">January 03, 2020</option><option value="01/02/2020">January 02, 2020</option><option value="01/01/2020">January 01, 2020</option><option value="12/31/2019">December 31, 2019</option><option value="12/30/2019">December 30, 2019</option><option value="12/29/2019">December 29, 2019</option><option value="12/28/2019">December 28, 2019</option><option value="12/27/2019">December 27, 2019</option><option value="12/26/2019">December 26, 2019</option><option value="12/25/2019">December 25, 2019</option><option value="12/24/2019">December 24, 2019</option><option value="12/23/2019">December 23, 2019</option><option value="12/22/2019">December 22, 2019</option><option value="12/21/2019">December 21, 2019</option><option value="12/20/2019">December 20, 2019</option><option value="12/19/2019">December 19, 2019</option><option value="12/18/2019">December 18, 2019</option><option value="12/17/2019">December 17, 2019</option><option value="12/16/2019">December 16, 2019</option><option value="12/15/2019">December 15, 2019</option><option value="12/14/2019">December 14, 2019</option><option value="12/13/2019">December 13, 2019</option><option value="12/12/2019">December 12, 2019</option><option value="12/11/2019">December 11, 2019</option><option value="12/10/2019">December 10, 2019</option><option value="12/09/2019">December 09, 2019</option><option value="12/08/2019">December 08, 2019</option><option value="12/07/2019">December 07, 2019</option><option value="12/06/2019">December 06, 2019</option><option value="12/05/2019">December 05, 2019</option><option value="12/04/2019">December 04, 2019</option><option value="12/03/2019">December 03, 2019</option><option value="12/02/2019">December 02, 2019</option><option value="12/01/2019">December 01, 2019</option><option value="11/30/2019">November 30, 2019</option><option value="11/29/2019">November 29, 2019</option><option value="11/28/2019">November 28, 2019</option><option value="11/27/2019">November 27, 2019</option><option value="11/26/2019">November 26, 2019</option><option value="11/25/2019">November 25, 2019</option><option value="11/24/2019">November 24, 2019</option><option value="11/23/2019">November 23, 2019</option><option value="11/22/2019">November 22, 2019</option><option value="11/21/2019">November 21, 2019</option><option value="11/20/2019">November 20, 2019</option><option value="11/19/2019">November 19, 2019</option><option value="11/18/2019">November 18, 2019</option><option value="11/17/2019">November 17, 2019</option><option value="11/16/2019">November 16, 2019</option><option value="11/15/2019">November 15, 2019</option><option value="11/14/2019">November 14, 2019</option><option value="11/13/2019">November 13, 2019</option><option value="11/12/2019">November 12, 2019</option><option value="11/11/2019">November 11, 2019</option><option value="11/10/2019">November 10, 2019</option><option value="11/09/2019">November 09, 2019</option><option value="11/08/2019">November 08, 2019</option><option value="11/07/2019">November 07, 2019</option><option value="11/06/2019">November 06, 2019</option><option value="11/05/2019">November 05, 2019</option><option value="11/04/2019">November 04, 2019</option><option value="11/03/2019">November 03, 2019</option><option value="11/02/2019">November 02, 2019</option><option value="11/01/2019">November 01, 2019</option><option value="10/31/2019">October 31, 2019</option><option value="10/30/2019">October 30, 2019</option><option value="10/29/2019">October 29, 2019</option><option value="10/28/2019">October 28, 2019</option><option value="10/27/2019">October 27, 2019</option><option value="10/26/2019">October 26, 2019</option><option value="10/25/2019">October 25, 2019</option><option value="10/24/2019">October 24, 2019</option><option value="10/23/2019">October 23, 2019</option><option value="10/22/2019">October 22, 2019</option><option value="10/21/2019">October 21, 2019</option><option value="10/20/2019">October 20, 2019</option><option value="10/19/2019">October 19, 2019</option><option value="10/18/2019">October 18, 2019</option><option value="10/17/2019">October 17, 2019</option><option value="10/16/2019">October 16, 2019</option><option value="10/15/2019">October 15, 2019</option><option value="10/14/2019">October 14, 2019</option><option value="10/13/2019">October 13, 2019</option><option value="10/12/2019">October 12, 2019</option><option value="10/11/2019">October 11, 2019</option><option value="10/10/2019">October 10, 2019</option><option value="10/09/2019">October 09, 2019</option><option value="10/08/2019">October 08, 2019</option><option value="10/07/2019">October 07, 2019</option><option value="10/06/2019">October 06, 2019</option><option value="10/05/2019">October 05, 2019</option><option value="10/04/2019">October 04, 2019</option><option value="10/03/2019">October 03, 2019</option><option value="10/02/2019">October 02, 2019</option><option value="10/01/2019">October 01, 2019</option><option value="09/30/2019">September 30, 2019</option><option value="09/29/2019">September 29, 2019</option><option value="09/28/2019">September 28, 2019</option><option value="09/27/2019">September 27, 2019</option><option value="09/26/2019">September 26, 2019</option><option value="09/25/2019">September 25, 2019</option><option value="09/24/2019">September 24, 2019</option><option value="09/23/2019">September 23, 2019</option><option value="09/22/2019">September 22, 2019</option><option value="09/21/2019">September 21, 2019</option><option value="09/20/2019">September 20, 2019</option><option value="09/19/2019">September 19, 2019</option><option value="09/18/2019">September 18, 2019</option><option value="09/17/2019">September 17, 2019</option><option value="09/16/2019">September 16, 2019</option><option value="09/15/2019">September 15, 2019</option><option value="09/14/2019">September 14, 2019</option><option value="09/13/2019">September 13, 2019</option><option value="09/12/2019">September 12, 2019</option><option value="09/11/2019">September 11, 2019</option><option value="09/10/2019">September 10, 2019</option><option value="09/09/2019">September 09, 2019</option><option value="09/08/2019">September 08, 2019</option><option value="09/07/2019">September 07, 2019</option><option value="09/06/2019">September 06, 2019</option><option value="09/05/2019">September 05, 2019</option><option value="09/04/2019">September 04, 2019</option><option value="09/03/2019">September 03, 2019</option><option value="09/02/2019">September 02, 2019</option><option value="09/01/2019">September 01, 2019</option><option value="08/31/2019">August 31, 2019</option><option value="08/30/2019">August 30, 2019</option><option value="08/29/2019">August 29, 2019</option><option value="08/28/2019">August 28, 2019</option><option value="08/27/2019">August 27, 2019</option><option value="08/26/2019">August 26, 2019</option><option value="08/25/2019">August 25, 2019</option><option value="08/24/2019">August 24, 2019</option><option value="08/23/2019">August 23, 2019</option><option value="08/22/2019">August 22, 2019</option><option value="08/21/2019">August 21, 2019</option><option value="08/20/2019">August 20, 2019</option><option value="08/19/2019">August 19, 2019</option><option value="08/18/2019">August 18, 2019</option><option value="08/17/2019">August 17, 2019</option><option value="08/16/2019">August 16, 2019</option><option value="08/15/2019">August 15, 2019</option><option value="08/14/2019">August 14, 2019</option><option value="08/13/2019">August 13, 2019</option><option value="08/12/2019">August 12, 2019</option><option value="08/11/2019">August 11, 2019</option><option value="08/10/2019">August 10, 2019</option><option value="08/09/2019">August 09, 2019</option><option value="08/08/2019">August 08, 2019</option><option value="08/07/2019">August 07, 2019</option><option value="08/06/2019">August 06, 2019</option><option value="08/05/2019">August 05, 2019</option><option value="08/04/2019">August 04, 2019</option><option value="08/03/2019">August 03, 2019</option><option value="08/02/2019">August 02, 2019</option><option value="08/01/2019">August 01, 2019</option><option value="07/31/2019">July 31, 2019</option><option value="07/30/2019">July 30, 2019</option><option value="07/29/2019">July 29, 2019</option><option value="07/28/2019">July 28, 2019</option><option value="07/27/2019">July 27, 2019</option><option value="07/26/2019">July 26, 2019</option><option value="07/25/2019">July 25, 2019</option><option value="07/24/2019">July 24, 2019</option><option value="07/23/2019">July 23, 2019</option><option value="07/22/2019">July 22, 2019</option><option value="07/21/2019">July 21, 2019</option><option value="07/20/2019">July 20, 2019</option><option value="07/19/2019">July 19, 2019</option><option value="07/18/2019">July 18, 2019</option><option value="07/17/2019">July 17, 2019</option><option value="07/16/2019">July 16, 2019</option><option value="07/15/2019">July 15, 2019</option><option value="07/14/2019">July 14, 2019</option><option value="07/13/2019">July 13, 2019</option><option value="07/12/2019">July 12, 2019</option><option value="07/11/2019">July 11, 2019</option><option value="07/10/2019">July 10, 2019</option><option value="07/09/2019">July 09, 2019</option><option value="07/08/2019">July 08, 2019</option><option value="07/07/2019">July 07, 2019</option><option value="07/06/2019">July 06, 2019</option><option value="07/05/2019">July 05, 2019</option><option value="07/04/2019">July 04, 2019</option><option value="07/03/2019">July 03, 2019</option><option value="07/02/2019">July 02, 2019</option><option value="07/01/2019">July 01, 2019</option><option value="06/30/2019">June 30, 2019</option><option value="06/29/2019">June 29, 2019</option><option value="06/28/2019">June 28, 2019</option><option value="06/27/2019">June 27, 2019</option><option value="06/26/2019">June 26, 2019</option><option value="06/25/2019">June 25, 2019</option><option value="06/24/2019">June 24, 2019</option><option value="06/23/2019">June 23, 2019</option><option value="06/22/2019">June 22, 2019</option><option value="06/21/2019">June 21, 2019</option><option value="06/20/2019">June 20, 2019</option><option value="06/19/2019">June 19, 2019</option><option value="06/18/2019">June 18, 2019</option><option value="06/17/2019">June 17, 2019</option><option value="06/16/2019">June 16, 2019</option><option value="06/15/2019">June 15, 2019</option><option value="06/14/2019">June 14, 2019</option><option value="06/13/2019">June 13, 2019</option><option value="06/12/2019">June 12, 2019</option><option value="06/11/2019">June 11, 2019</option><option value="06/10/2019">June 10, 2019</option><option value="06/09/2019">June 09, 2019</option><option value="06/08/2019">June 08, 2019</option><option value="06/07/2019">June 07, 2019</option><option value="06/06/2019">June 06, 2019</option><option value="06/05/2019">June 05, 2019</option><option value="06/04/2019">June 04, 2019</option><option value="06/03/2019">June 03, 2019</option><option value="06/02/2019">June 02, 2019</option><option value="06/01/2019">June 01, 2019</option><option value="05/31/2019">May 31, 2019</option><option value="05/30/2019">May 30, 2019</option><option value="05/29/2019">May 29, 2019</option><option value="05/28/2019">May 28, 2019</option><option value="05/27/2019">May 27, 2019</option><option value="05/26/2019">May 26, 2019</option><option value="05/25/2019">May 25, 2019</option><option value="05/24/2019">May 24, 2019</option><option value="05/23/2019">May 23, 2019</option><option value="05/22/2019">May 22, 2019</option><option value="05/21/2019">May 21, 2019</option><option value="05/20/2019">May 20, 2019</option><option value="05/19/2019">May 19, 2019</option><option value="05/18/2019">May 18, 2019</option><option value="05/17/2019">May 17, 2019</option><option value="05/16/2019">May 16, 2019</option><option value="05/15/2019">May 15, 2019</option><option value="05/14/2019">May 14, 2019</option><option value="05/13/2019">May 13, 2019</option><option value="05/12/2019">May 12, 2019</option><option value="05/11/2019">May 11, 2019</option><option value="05/10/2019">May 10, 2019</option><option value="05/09/2019">May 09, 2019</option><option value="05/08/2019">May 08, 2019</option><option value="05/07/2019">May 07, 2019</option><option value="05/06/2019">May 06, 2019</option><option value="05/05/2019">May 05, 2019</option><option value="05/04/2019">May 04, 2019</option><option value="05/03/2019">May 03, 2019</option><option value="05/02/2019">May 02, 2019</option><option value="05/01/2019">May 01, 2019</option><option value="04/30/2019">April 30, 2019</option><option value="04/29/2019">April 29, 2019</option><option value="04/28/2019">April 28, 2019</option><option value="04/27/2019">April 27, 2019</option><option value="04/26/2019">April 26, 2019</option><option value="04/25/2019">April 25, 2019</option><option value="04/24/2019">April 24, 2019</option><option value="04/23/2019">April 23, 2019</option><option value="04/22/2019">April 22, 2019</option><option value="04/21/2019">April 21, 2019</option><option value="04/20/2019">April 20, 2019</option><option value="04/19/2019">April 19, 2019</option><option value="04/18/2019">April 18, 2019</option><option value="04/17/2019">April 17, 2019</option><option value="04/16/2019">April 16, 2019</option><option value="04/15/2019">April 15, 2019</option><option value="04/14/2019">April 14, 2019</option><option value="04/13/2019">April 13, 2019</option><option value="04/12/2019">April 12, 2019</option><option value="04/11/2019">April 11, 2019</option>
+								</select></td>
+						</tr>
+				
+						<tr>
+							<td><label for="injuryType"> Injury Type:</label></td>
+							<td><select id="injuryType" name="searchInjury" tabindex="8" style="width:143px">
+									<option value=""></option>
+									<!-- <option value="Probable - Not Apparent">Minor</option>
+									<option value="Evident - Not Disabling">Moderate</option>
+									<option value="Disabling">Serious</option>
+									<option value="Fatal">Fatal</option> -->
+									<option value="MINOR">Minor</option>
+									<option value="MODERATE">Moderate</option>
+									<option value="SERIOUS">Serious</option>
+									<option value="FATAL">Fatal</option>
+								</select></td>
+						</tr>
+				
+						<tr>
+							<td colspan="2" class="center">
+									<input type="submit" value="Search" class="commandExButton" /> 
+									<input type="reset" value="Reset" class="commandExButton" />
+							</td>
+						</tr>
+				
+				</table>
+				</fieldset>	
+			
+			</td>
+			
+			<td id="rightColumn">
+				<img src="static/images/missouri.gif" width="315" height="253" alt="Click on a troop letter to view accidents by troop." usemap="#missouri" /><br />
+						<span class="center">
+						Click on a letter to view crashes by troop.<br />
+						<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/DevelopersPages/TroopHeadquarters/troopIndex.html">Contact
+						Local Troop Headquarters</a></span>
+				
+						<map name="missouri" id="missouri">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=I"
+							alt="Troop I Accidents"
+							coords="170,127,191,126,197,134,201,132,218,132,220,154,218,162,211,162,211,167,214,171,191,172,190,166,168,162,166,168,140,168,140,148,148,148,154,151,161,141,170,138,170,129">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=C"
+							alt="Troop C Accidents"
+							coords="220,61,229,68,238,83,241,92,248,93,255,91,264,96,261,102,260,110,257,119,255,127,261,135,269,142,274,148,283,151,288,155,293,163,266,164,264,160,243,160,240,155,221,154,220,132,209,130,207,110,207,97,215,96,216,89,207,79,204,64,214,59">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=F"
+							alt="Troop F Accidents"
+							coords="138,76,142,70,157,73,162,75,165,69,188,69,204,71,206,81,213,87,213,96,205,95,206,128,201,128,200,132,196,131,195,126,170,126,168,133,170,139,159,140,158,149,152,151,150,148,131,147,129,129,130,110,130,91,137,78">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=A"
+							alt="Troop A Accidents"
+							coords="33,57,54,60,59,64,73,63,75,60,96,60,103,56,117,55,120,62,128,68,137,75,136,81,130,88,128,117,128,139,110,136,108,131,83,131,80,137,57,139,56,80,45,72,37,62">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=B"
+							alt="Troop B Accidents"
+							coords="114,4,144,3,171,2,189,1,195,6,200,11,203,15,201,19,201,27,201,34,206,45,215,56,204,63,204,70,192,69,180,67,164,67,163,73,152,71,142,68,136,74,128,67,119,61,117,50,113,38,113,8,116,8">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=H"
+							alt="Troop H Accidents"
+							coords="2,5,35,4,112,4,112,38,117,53,97,55,96,60,76,60,58,63,55,58,34,57,44,44,40,38,30,40,16,28,2,5">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=E"
+							alt="Troop E Accidents"
+							coords="217,164,221,155,239,156,242,161,247,161,263,161,266,165,292,165,298,175,295,180,298,190,303,194,309,197,311,202,309,207,308,212,305,217,301,215,298,221,293,220,293,227,290,231,291,237,286,236,289,242,285,248,254,249,266,235,264,224,219,222,218,207,239,206,237,191,235,174,235,166,219,163">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=G"
+							alt="Troop G Accidents"
+							coords="146,170,166,170,170,164,188,166,191,173,212,173,212,166,234,165,236,182,236,194,239,204,217,206,218,222,143,222,142,206,136,205,135,193,144,191,146,170">
+						<area shape="poly" href="/HP68/SearchAction?searchTroop=D"
+							alt="Troop D Accidents"
+							coords="55,222,56,139,73,140,80,140,82,132,108,131,109,139,127,140,128,147,138,148,139,168,146,169,145,190,136,192,136,204,142,206,141,222,57,222">
+						<area shape="default" href="/HP68/search.jsp" alt="No Troop Selected">
+						</map>
+			</td>
+			</tr>
+		</table>
+</form>	
+	<br />	
+			
+	<div class="disclaimer">Information on this site is preliminary information relating to motor 
+		vehicle <span class="bold">injury and fatal</span> crashes investigated by the Missouri State Highway Patrol.  
+		(Crashes investigated by agencies outside the Missouri State Highway Patrol are 
+		not included.)  They are posted here automatically and remain online for <span class="bold">1
+		year</span>. This site is hosted and maintained by the Missouri State Highway Patrol and the<span class="italic"> 
+		reports are unofficial</span>.  If you want an official crash report,<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/PatrolDivisions/PRD/TrafficCrashReports/documents/SHP-842Web.pdf">Click Here</a>.  If you 
+		do not see the crash report you are looking for, please  
+		<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/DevelopersPages/TroopHeadquarters/troopIndex.html">contact the local Highway Patrol troop headquarters</a> or the
+		<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/PatrolDivisions/PRD/index.html"> Patrol Records Division at General Headquarters</a>. 
+	</div>
+
+	<br />
+
+
+	<!-- Ten Most Recent Accidents Output -->
+	
+	
+
+	<!-- HTML Output -->
+		<div class="test">
+		
+			
+			<table class="accidentOutput" summary="Table listing details of the accident.">
+			<caption class="tableHeading"> People Most Recently Involved in a Crash</caption>
+			<!--  <thead>
+			<tr>
+				<th class="headerSortPrint">Report</th>
+				<th class="columnHeading">Name</th>
+				<th class="columnHeading">Age</th>
+				<th class="columnHeading">Person City/State</th>
+				<th class="columnHeading">Personal Injury</th>
+				<th class="columnHeading">Date</th>
+				<th class="columnHeading">Time</th>
+				<th class="columnHeading">Accident County</th>
+				<th class="columnHeading">Accident Location</th>
+				<th class="columnHeading">Troop</th>
+			</tr>
+			</thead>-->
+			
+			<thead>
+		<tr>
+			<th class="headerSortPrint">Report</th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=name';document.sortForm.submit();">Name
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=age';document.sortForm.submit();">Age
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=city';document.sortForm.submit();">Person City/State
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=injury';document.sortForm.submit();">Personal Injury
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=date';document.sortForm.submit();">Date
+				
+					<img alt="Sort down" src="/HP68/static/images/down.gif" />
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=time';document.sortForm.submit();">Time
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=county';document.sortForm.submit();">Crash County
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=location';document.sortForm.submit();">Crash Location
+				
+				</a></th>
+			<th class="headerSort"><a href="javascript:document.sortForm.action='/HP68/InitialSortAction?column=troop';document.sortForm.submit();">Troop
+				
+				</a></th>
+
+		</tr>
+		</thead>
+
+			
+			
+			
+			
+			
+			
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169754">View</a></td>
+						
+						<td class="infoCell">
+						
+							BURROUGHS, DEBBIE L
+						
+						</td>
+						<td class="infoCell">57</td>
+						<td class="infoCell">SHENANDOAH, IA</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/09/2020</td>
+						<td class="infoCell">6:35AM</td>
+						<td class="infoCell">NODAWAY</td>
+						<td class="infoCell">US 71 AT ICON RD</td>
+						<td class="infoCell">H</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169754">View</a></td>
+						
+						<td class="infoCell2">
+						
+							PARRISH, NATHANEAL A
+						
+						</td>
+						<td class="infoCell2">28</td>
+						<td class="infoCell2">BOONEVILLE, AR</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/09/2020</td>
+						<td class="infoCell2">6:35AM</td>
+						<td class="infoCell2">NODAWAY</td>
+						<td class="infoCell2">US 71 AT ICON RD</td>
+						<td class="infoCell2">H</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169737">View</a></td>
+						
+						<td class="infoCell">
+						
+							BLEVINS, ROGER L
+						
+						</td>
+						<td class="infoCell">64</td>
+						<td class="infoCell">MILLER, MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/09/2020</td>
+						<td class="infoCell">5:15AM</td>
+						<td class="infoCell">LAWRENCE</td>
+						<td class="infoCell">MO 96 3 MILES EAST OF MILLER</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169724">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MILINSKI, MARK M
+						
+						</td>
+						<td class="infoCell2">51</td>
+						<td class="infoCell2">FREDERICKTOWN, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/09/2020</td>
+						<td class="infoCell2">1:08AM</td>
+						<td class="infoCell2">BOLLINGER</td>
+						<td class="infoCell2">MO 72 EAST OF ROUTE O</td>
+						<td class="infoCell2">E</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169644">View</a></td>
+						
+						<td class="infoCell">
+						
+							HUNT, JOSHUA P
+						
+						</td>
+						<td class="infoCell">23</td>
+						<td class="infoCell">FAIR GROVE, MO</td>
+						<td class="infoCell">SERIOUS</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">9:50PM</td>
+						<td class="infoCell">GREENE</td>
+						<td class="infoCell">HWY 125 TWO MILE NORTH OF SPRINGFIELD</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169632">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MONCRIEF, JOHN D
+						
+						</td>
+						<td class="infoCell2">66</td>
+						<td class="infoCell2">ROLLA, MO</td>
+						<td class="infoCell2">SERIOUS</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">9:30PM</td>
+						<td class="infoCell2">TEXAS</td>
+						<td class="infoCell2">US 63, 3 MILES NORTH OF HOUSTON</td>
+						<td class="infoCell2">G</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169597">View</a></td>
+						
+						<td class="infoCell">
+						
+							ARMENTROUT, BRADLEY W
+						
+						</td>
+						<td class="infoCell">19</td>
+						<td class="infoCell">CEDAR PARK, TX</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">8:05PM</td>
+						<td class="infoCell">CRAWFORD</td>
+						<td class="infoCell">HWY D NEAR ROCK ROAD</td>
+						<td class="infoCell">I</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169597">View</a></td>
+						
+						<td class="infoCell2">
+						
+						JUVENILE
+						
+						</td>
+						<td class="infoCell2">15</td>
+						<td class="infoCell2">SULLIVAN, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">8:05PM</td>
+						<td class="infoCell2">CRAWFORD</td>
+						<td class="infoCell2">HWY D NEAR ROCK ROAD</td>
+						<td class="infoCell2">I</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169527">View</a></td>
+						
+						<td class="infoCell">
+						
+							HELTON, HANNAH T
+						
+						</td>
+						<td class="infoCell">23</td>
+						<td class="infoCell">POPLAR BLUFF, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">7:05PM</td>
+						<td class="infoCell">BUTLER</td>
+						<td class="infoCell">COUNTY ROAD 542, SIX MILES NORTH OF POPLAR BLUFF</td>
+						<td class="infoCell">E</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169366">View</a></td>
+						
+						<td class="infoCell2">
+						
+							DRENNAN, JESSICA M
+						
+						</td>
+						<td class="infoCell2">29</td>
+						<td class="infoCell2">BRANSON, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">4:44PM</td>
+						<td class="infoCell2">STONE</td>
+						<td class="infoCell2">EAGLE CREST DR. 2.5 MILES NORTH OF CAPE FAIR</td>
+						<td class="infoCell2">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169178">View</a></td>
+						
+						<td class="infoCell">
+						
+							SMITH, TREYVONE J
+						
+						</td>
+						<td class="infoCell">26</td>
+						<td class="infoCell">BLYTHEVILLE, AR</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">1:55PM</td>
+						<td class="infoCell">DUNKLIN</td>
+						<td class="infoCell">US 412, ONE MILE SOUTH OF SENATH</td>
+						<td class="infoCell">E</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169107">View</a></td>
+						
+						<td class="infoCell2">
+						
+							CANTRELL, JOSHUA D
+						
+						</td>
+						<td class="infoCell2">23</td>
+						<td class="infoCell2">MARSHFIELD, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">1:00PM</td>
+						<td class="infoCell2">WEBSTER</td>
+						<td class="infoCell2">EVERGREEN RD 4 MILES EAST OF STRAFFORD</td>
+						<td class="infoCell2">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169107">View</a></td>
+						
+						<td class="infoCell">
+						
+							CARLISLE, THOMAS R
+						
+						</td>
+						<td class="infoCell">19</td>
+						<td class="infoCell">MARHSFIELD, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">1:00PM</td>
+						<td class="infoCell">WEBSTER</td>
+						<td class="infoCell">EVERGREEN RD 4 MILES EAST OF STRAFFORD</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169107">View</a></td>
+						
+						<td class="infoCell2">
+						
+							CHAPLIN, THOMAS J
+						
+						</td>
+						<td class="infoCell2">19</td>
+						<td class="infoCell2">MARSHFIELD, MO</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">1:00PM</td>
+						<td class="infoCell2">WEBSTER</td>
+						<td class="infoCell2">EVERGREEN RD 4 MILES EAST OF STRAFFORD</td>
+						<td class="infoCell2">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169107">View</a></td>
+						
+						<td class="infoCell">
+						
+							SULLIVAN, THOMAS J
+						
+						</td>
+						<td class="infoCell">27</td>
+						<td class="infoCell">BUFFALO, MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">1:00PM</td>
+						<td class="infoCell">WEBSTER</td>
+						<td class="infoCell">EVERGREEN RD 4 MILES EAST OF STRAFFORD</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200169024">View</a></td>
+						
+						<td class="infoCell2">
+						
+							URBANO, ANGELA M
+						
+						</td>
+						<td class="infoCell2">76</td>
+						<td class="infoCell2">BELGRADE, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">11:32AM</td>
+						<td class="infoCell2">WASHINGTON</td>
+						<td class="infoCell2">ROUTE C WEST OF ROUTE JJ</td>
+						<td class="infoCell2">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168777">View</a></td>
+						
+						<td class="infoCell">
+						
+							WORTHEY, MEGAN E
+						
+						</td>
+						<td class="infoCell">26</td>
+						<td class="infoCell">WINFIELD, MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">7:22AM</td>
+						<td class="infoCell">LINCOLN</td>
+						<td class="infoCell">MO-47 AT GRAVENS RD</td>
+						<td class="infoCell">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168699">View</a></td>
+						
+						<td class="infoCell2">
+						
+							TROMBLY, FRED B
+						
+						</td>
+						<td class="infoCell2">56</td>
+						<td class="infoCell2">DONIPHAN, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/08/2020</td>
+						<td class="infoCell2">12:15AM</td>
+						<td class="infoCell2">RIPLEY</td>
+						<td class="infoCell2">US 160 - 4 MILES WEST OF DONIPHAN</td>
+						<td class="infoCell2">E</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168702">View</a></td>
+						
+						<td class="infoCell">
+						
+							FRAZIER, ZACKERY D
+						
+						</td>
+						<td class="infoCell">43</td>
+						<td class="infoCell">ADRIAN, MO</td>
+						<td class="infoCell">FATAL</td>	
+						<td class="infoCell">04/08/2020</td>
+						<td class="infoCell">12:05AM</td>
+						<td class="infoCell">BATES</td>
+						<td class="infoCell">I-49 NB AT 143.4MM</td>
+						<td class="infoCell">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168536">View</a></td>
+						
+						<td class="infoCell2">
+						
+							PEREZ, ISDIJAR 
+						
+						</td>
+						<td class="infoCell2">43</td>
+						<td class="infoCell2">OZARK, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">7:30PM</td>
+						<td class="infoCell2">CHRISTIAN</td>
+						<td class="infoCell2">WESTWIND DRIVE APPROXIMATELY 1/4 MILE NORTH OF OZARK</td>
+						<td class="infoCell2">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168541">View</a></td>
+						
+						<td class="infoCell">
+						
+						JUVENILE
+						
+						</td>
+						<td class="infoCell">10</td>
+						<td class="infoCell">JOPLIN,MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">7:30PM</td>
+						<td class="infoCell">NEWTON</td>
+						<td class="infoCell">PRIVATE PROPERTY, 5009 HWY 43, JUST SOUTH OF JOPLIN</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168504">View</a></td>
+						
+						<td class="infoCell2">
+						
+							VANSICKLE, JAMES W
+						
+						</td>
+						<td class="infoCell2">67</td>
+						<td class="infoCell2">ALTON, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">6:40PM</td>
+						<td class="infoCell2">OREGON</td>
+						<td class="infoCell2">HIGHWAY EE 12 MILES EAST OF THAYER</td>
+						<td class="infoCell2">G</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168411">View</a></td>
+						
+						<td class="infoCell">
+						
+							HUTCHINGS, IAN M
+						
+						</td>
+						<td class="infoCell">20</td>
+						<td class="infoCell">SALEM</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">5:09PM</td>
+						<td class="infoCell">DENT</td>
+						<td class="infoCell">RT ZZ 2 MILES SOUTH OF JADWIN</td>
+						<td class="infoCell">I</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168411">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MISCHIARA, CALEB J
+						
+						</td>
+						<td class="infoCell2">19</td>
+						<td class="infoCell2">SALEM MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">5:09PM</td>
+						<td class="infoCell2">DENT</td>
+						<td class="infoCell2">RT ZZ 2 MILES SOUTH OF JADWIN</td>
+						<td class="infoCell2">I</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168390">View</a></td>
+						
+						<td class="infoCell">
+						
+							ANDERSON, VANCE E
+						
+						</td>
+						<td class="infoCell">60</td>
+						<td class="infoCell">LOUISINA, MO</td>
+						<td class="infoCell">NO INJURY</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">4:45PM</td>
+						<td class="infoCell">PIKE</td>
+						<td class="infoCell">US 54 AT PIKE COUNTY ROAD 136</td>
+						<td class="infoCell">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168390">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MARTIN, ELLEN L
+						
+						</td>
+						<td class="infoCell2">23</td>
+						<td class="infoCell2">LOUISINA, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">4:45PM</td>
+						<td class="infoCell2">PIKE</td>
+						<td class="infoCell2">US 54 AT PIKE COUNTY ROAD 136</td>
+						<td class="infoCell2">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168392">View</a></td>
+						
+						<td class="infoCell">
+						
+							GOEKE, RAYMOND E
+						
+						</td>
+						<td class="infoCell">61</td>
+						<td class="infoCell">SPRINGFIELD,MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">4:45PM</td>
+						<td class="infoCell">GREENE</td>
+						<td class="infoCell">FARM ROAD 147, 3 MILES NORTH OF SPRINGFIELD.</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168289">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MURRAY, JOSHUA A
+						
+						</td>
+						<td class="infoCell2">31</td>
+						<td class="infoCell2">MEXICO, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">4:26PM</td>
+						<td class="infoCell2">MONTGOMERY</td>
+						<td class="infoCell2">MO 94 1088 FEET EAST OF RT P</td>
+						<td class="infoCell2">F</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168364">View</a></td>
+						
+						<td class="infoCell">
+						
+							BARNETT, JOSEPH S
+						
+						</td>
+						<td class="infoCell">79</td>
+						<td class="infoCell">MONROE CITY, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">4:23PM</td>
+						<td class="infoCell">RALLS</td>
+						<td class="infoCell">US-36 FOUR MILES EAST OF MONROE CITY</td>
+						<td class="infoCell">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168364">View</a></td>
+						
+						<td class="infoCell2">
+						
+							QUIGLEY, DONALD E
+						
+						</td>
+						<td class="infoCell2">18</td>
+						<td class="infoCell2">MONROE CITY, MO</td>
+						<td class="infoCell2">FATAL</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">4:23PM</td>
+						<td class="infoCell2">RALLS</td>
+						<td class="infoCell2">US-36 FOUR MILES EAST OF MONROE CITY</td>
+						<td class="infoCell2">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168371">View</a></td>
+						
+						<td class="infoCell">
+						
+							COLE, PHYLIS E
+						
+						</td>
+						<td class="infoCell">73</td>
+						<td class="infoCell">UNION STAR, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">4:23PM</td>
+						<td class="infoCell">ANDREW</td>
+						<td class="infoCell">US169, 4 MILES NORTH OF ST. JOSEPH</td>
+						<td class="infoCell">H</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168371">View</a></td>
+						
+						<td class="infoCell2">
+						
+							REENTS, TARYN N
+						
+						</td>
+						<td class="infoCell2">17</td>
+						<td class="infoCell2">COSBY, MO</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">4:23PM</td>
+						<td class="infoCell2">ANDREW</td>
+						<td class="infoCell2">US169, 4 MILES NORTH OF ST. JOSEPH</td>
+						<td class="infoCell2">H</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168337">View</a></td>
+						
+						<td class="infoCell">
+						
+							LLOYD, WILLIAM F
+						
+						</td>
+						<td class="infoCell">69</td>
+						<td class="infoCell">CABOOL, MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">3:50PM</td>
+						<td class="infoCell">TANEY</td>
+						<td class="infoCell">MO 125 5 MILES SOUTH OF BRADLEYVILLE</td>
+						<td class="infoCell">D</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168251">View</a></td>
+						
+						<td class="infoCell2">
+						
+							GALEGOR, MARY L
+						
+						</td>
+						<td class="infoCell2">90</td>
+						<td class="infoCell2">HUNTSVILLE, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">3:00PM</td>
+						<td class="infoCell2">RANDOLPH</td>
+						<td class="infoCell2">US-63 THREE QUARTERS OF ONE MILE  EAST OF RENICK</td>
+						<td class="infoCell2">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168251">View</a></td>
+						
+						<td class="infoCell">
+						
+							HEBB, KRAIG L
+						
+						</td>
+						<td class="infoCell">60</td>
+						<td class="infoCell">CANTON, IL</td>
+						<td class="infoCell">NO INJURY</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">3:00PM</td>
+						<td class="infoCell">RANDOLPH</td>
+						<td class="infoCell">US-63 THREE QUARTERS OF ONE MILE  EAST OF RENICK</td>
+						<td class="infoCell">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168251">View</a></td>
+						
+						<td class="infoCell2">
+						
+							WRIGHT, JEANINE 
+						
+						</td>
+						<td class="infoCell2">89</td>
+						<td class="infoCell2">MOBERLY, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">3:00PM</td>
+						<td class="infoCell2">RANDOLPH</td>
+						<td class="infoCell2">US-63 THREE QUARTERS OF ONE MILE  EAST OF RENICK</td>
+						<td class="infoCell2">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168210">View</a></td>
+						
+						<td class="infoCell">
+						
+							MAUZY, KALEB M
+						
+						</td>
+						<td class="infoCell">18</td>
+						<td class="infoCell">LOHMAN, MO</td>
+						<td class="infoCell">NO INJURY</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">2:18PM</td>
+						<td class="infoCell">COLE</td>
+						<td class="infoCell">WALNUT ACRES ROAD .25 MILE SOUTH OF STRINGTOWN STATION ROAD</td>
+						<td class="infoCell">F</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168210">View</a></td>
+						
+						<td class="infoCell2">
+						
+							SELLERS, KELTON R
+						
+						</td>
+						<td class="infoCell2">17</td>
+						<td class="infoCell2">JEFFERSON CITY, MO</td>
+						<td class="infoCell2">FATAL</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">2:18PM</td>
+						<td class="infoCell2">COLE</td>
+						<td class="infoCell2">WALNUT ACRES ROAD .25 MILE SOUTH OF STRINGTOWN STATION ROAD</td>
+						<td class="infoCell2">F</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168167">View</a></td>
+						
+						<td class="infoCell">
+						
+							WANG, CHING P
+						
+						</td>
+						<td class="infoCell">68</td>
+						<td class="infoCell">ST. LOUIS, MO</td>
+						<td class="infoCell">SERIOUS</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">1:42PM</td>
+						<td class="infoCell">WASHINGTON</td>
+						<td class="infoCell">HIGHWAY 21 AT MEADOW HILL ROAD</td>
+						<td class="infoCell">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200168041">View</a></td>
+						
+						<td class="infoCell2">
+						
+							FRANKE, CHET A
+						
+						</td>
+						<td class="infoCell2">37</td>
+						<td class="infoCell2">OAK GROVE, MO</td>
+						<td class="infoCell2">MODERATE</td>	
+						<td class="infoCell2">04/07/2020</td>
+						<td class="infoCell2">11:45AM</td>
+						<td class="infoCell2">JACKSON</td>
+						<td class="infoCell2">SOUTHBOUND ROUTE F JUST NORTH OF AL GOSSETT ROAD</td>
+						<td class="infoCell2">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167926">View</a></td>
+						
+						<td class="infoCell">
+						
+							ROBINSON, THOMAS P
+						
+						</td>
+						<td class="infoCell">25</td>
+						<td class="infoCell">BARNHARDT, MO</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/07/2020</td>
+						<td class="infoCell">9:20AM</td>
+						<td class="infoCell">JEFFERSON</td>
+						<td class="infoCell">US-61 SOUTH OF HIGHWAY M</td>
+						<td class="infoCell">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167735">View</a></td>
+						
+						<td class="infoCell2">
+						
+							BRICKEY, KENNETH D
+						
+						</td>
+						<td class="infoCell2">33</td>
+						<td class="infoCell2">KNOB NOSTER, MO</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/06/2020</td>
+						<td class="infoCell2">11:57PM</td>
+						<td class="infoCell2">JOHNSON</td>
+						<td class="infoCell2">US 50 WB WEST OF NE HWY P</td>
+						<td class="infoCell2">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167735">View</a></td>
+						
+						<td class="infoCell">
+						
+							GREER, EMILY A
+						
+						</td>
+						<td class="infoCell">23</td>
+						<td class="infoCell">CENTERVIEW, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/06/2020</td>
+						<td class="infoCell">11:57PM</td>
+						<td class="infoCell">JOHNSON</td>
+						<td class="infoCell">US 50 WB WEST OF NE HWY P</td>
+						<td class="infoCell">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167683">View</a></td>
+						
+						<td class="infoCell2">
+						
+							MARKLEY, KIMBERLY A
+						
+						</td>
+						<td class="infoCell2">35</td>
+						<td class="infoCell2">LEXINGTON, MO</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/06/2020</td>
+						<td class="infoCell2">9:35PM</td>
+						<td class="infoCell2">LAFAYETTE</td>
+						<td class="infoCell2">ELM PARK RD 1MI NORTH OF COYOTE LANE</td>
+						<td class="infoCell2">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167683">View</a></td>
+						
+						<td class="infoCell">
+						
+							MASON, HILARY B
+						
+						</td>
+						<td class="infoCell">28</td>
+						<td class="infoCell">LEXINGTON, MO</td>
+						<td class="infoCell">SERIOUS</td>	
+						<td class="infoCell">04/06/2020</td>
+						<td class="infoCell">9:35PM</td>
+						<td class="infoCell">LAFAYETTE</td>
+						<td class="infoCell">ELM PARK RD 1MI NORTH OF COYOTE LANE</td>
+						<td class="infoCell">A</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167633">View</a></td>
+						
+						<td class="infoCell2">
+						
+							COTREL, LANE A
+						
+						</td>
+						<td class="infoCell2">17</td>
+						<td class="infoCell2">SUCCESS</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/06/2020</td>
+						<td class="infoCell2">8:05PM</td>
+						<td class="infoCell2">TEXAS</td>
+						<td class="infoCell2">MO RT AP THREE MILES SOUTH OF ROBY</td>
+						<td class="infoCell2">G</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167633">View</a></td>
+						
+						<td class="infoCell">
+						
+						JUVENILE
+						
+						</td>
+						<td class="infoCell">15</td>
+						<td class="infoCell">SUCCESS</td>
+						<td class="infoCell">MODERATE</td>	
+						<td class="infoCell">04/06/2020</td>
+						<td class="infoCell">8:05PM</td>
+						<td class="infoCell">TEXAS</td>
+						<td class="infoCell">MO RT AP THREE MILES SOUTH OF ROBY</td>
+						<td class="infoCell">G</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167905">View</a></td>
+						
+						<td class="infoCell2">
+						
+							LAFFERTY, ERNEST J
+						
+						</td>
+						<td class="infoCell2">72</td>
+						<td class="infoCell2">KIRKSVILLE, MO</td>
+						<td class="infoCell2">MINOR</td>	
+						<td class="infoCell2">04/06/2020</td>
+						<td class="infoCell2">8:00PM</td>
+						<td class="infoCell2">ADAIR</td>
+						<td class="infoCell2">ROUTE V AT MO 6</td>
+						<td class="infoCell2">B</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCellPrint"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167484">View</a></td>
+						
+						<td class="infoCell">
+						
+						JUVENILE
+						
+						</td>
+						<td class="infoCell">15</td>
+						<td class="infoCell">WASHINGTON, MO</td>
+						<td class="infoCell">MINOR</td>	
+						<td class="infoCell">04/06/2020</td>
+						<td class="infoCell">4:35PM</td>
+						<td class="infoCell">FRANKLIN</td>
+						<td class="infoCell">NORTHBOUND ST. JOHNS ROAD SOUTH OF MO-100</td>
+						<td class="infoCell">C</td>	
+					</tr>
+				
+
+					<tr>
+						<td class="infoCell2Print"><img src="/HP68/static/images/details.gif" alt="See Report Details" /> <a href="/HP68/AccidentDetailsAction?ACC_RPT_NUM=200167484">View</a></td>
+						
+						<td class="infoCell2">
+						
+						JUVENILE
+						
+						</td>
+						<td class="infoCell2">16</td>
+						<td class="infoCell2">WASHINGTON, MO</td>
+						<td class="infoCell2">NO INJURY</td>	
+						<td class="infoCell2">04/06/2020</td>
+						<td class="infoCell2">4:35PM</td>
+						<td class="infoCell2">FRANKLIN</td>
+						<td class="infoCell2">NORTHBOUND ST. JOHNS ROAD SOUTH OF MO-100</td>
+						<td class="infoCell2">C</td>	
+					</tr>
+				
+				
+			
+			
+			
+			
+			</table>
+			
+			
+		</div>
+	<!-- End HTML Output -->
+	<!-- End 10 Most Recent Accidents Output -->
+
+		<div>
+		<form name="sortForm" class="form" method="post">
+		
+		<input type="hidden" name="column">
+		</form>
+		</div>
+
+
+
+
+</div> <!-- End content div -->
+<div id="footer">
+	<span class="yellow">Highway Patrol Links: &nbsp; </span>
+	<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/Root/privacyStatement.html" class="footer" title="Read the Privacy Policy">Privacy Policy</a> - 
+	<a href="http://notes.mshp.dps.missouri.gov/si01/si01p001.nsf" class="footer" title="Read Highway Patrol News Releases">News Releases</a> - 
+	<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/AboutThePatrol/contactUs.html" class="footer" title="E-Mail the Highway Patrol">Contact Us</a> - 
+	<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/DevelopersPages/faqPage.html" class="footer" title="Highway Patrol Frequently Asked Questions">FAQ's</a> - 
+	<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/Root/index.html" class="footer" title="Highway Patrol Home Page">Home</a> - 
+	<a href="http://www.mshp.dps.missouri.gov/MSHPWeb/PatrolDivisions/HRD/index.html" class="footer" title="Jobs with the Highway Patrol">Jobs</a>
+	<!--  <a href="http://www.mshp.dps.missouri.gov/MSHPWeb/SiteMap.html" class="footer" title="View the Site Map">Site Map</a>-->
+</div>
+
+<!-- <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-380795-1";
+urchinTracker();
+</script> -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-380795-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
