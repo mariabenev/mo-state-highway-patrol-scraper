@@ -2,11 +2,11 @@
 # coding: utf-8
 from bs4 import BeautifulSoup
 from datetime import timedelta
-from peewee import DoesNotExist
 import requests
 import requests_cache
 from time import sleep
 from models import Crash, Vehicle, Injury
+from peewee import DoesNotExist
 
 
 requests_cache.install_cache(
@@ -67,9 +67,9 @@ def get_incident_report(incident_num):
 
     url = 'https://www.mshp.dps.missouri.gov/HP68/AccidentDetailsAction'
 
-    params = {'ACC_RPT_NUM': incident_num}
-
-    r = requests.get(url, params)
+    r = requests.get(
+        url, params={'ACC_RPT_NUM': incident_num}
+    )
 
     r.raise_for_status()
 
@@ -79,13 +79,15 @@ def get_incident_report(incident_num):
 def get_incident_report_tables(incident_report):
     soup = BeautifulSoup(incident_report, 'lxml')
 
-    return soup.find_all('table', class_='accidentOutput')
+    return soup.find_all('table', class_='accidentOutput')    
 
 
 def extract_crash_data(crash_info_table, misc_info_table):
-    
-    crash_info_cells = crash_info_table.find_all('td', class_='infoCell3')
-    misc_info_cell = misc_info_table.find('td', class_='infoCell3')
+
+    crash_info_cells = crash_info_table.find_all(
+        'td', class_='infoCell3'
+    )
+    misc_info_cell = misc_info_table.find('span', id='Misc')
 
     crash = Crash.create(
         incident_num=crash_info_cells[1].text.strip(),
@@ -99,8 +101,6 @@ def extract_crash_data(crash_info_table, misc_info_table):
         troop=crash_info_cells[8].text.strip(),
         misc_info=misc_info_cell.text.strip(),
     )
-
-    return crash
 
 
 def extract_vehicle_data(incident_num, table):
@@ -124,8 +124,6 @@ def extract_vehicle_data(incident_num, table):
             direction=cells[10].text.strip(),
         )
 
-    return
-
 
 def extract_injury_data(incident_num, table):
     rows = table.find_all('tr')[1:]
@@ -146,8 +144,6 @@ def extract_injury_data(incident_num, table):
             disposition=cells[8].text.strip(),
         )
 
-    return
-
 
 def main():
     for injury_type in get_injury_types():
@@ -156,12 +152,11 @@ def main():
 
         for incident_num in incident_nums:
             print('checking for %s' % incident_num)
-            
             try:
-                Crash.get(incident_num=incident_num)        
+                Crash.get(incident_num=incident_num)
             except DoesNotExist:
-                incident_report = get_incident_report(incident_num)
                 print('extracting data for %s' % incident_num)
+                incident_report = get_incident_report(incident_num)
                 tables = get_incident_report_tables(incident_report)
                 extract_crash_data(tables[0], tables[3])
                 extract_vehicle_data(incident_num, tables[1])
@@ -169,9 +164,10 @@ def main():
                 print('done')
                 sleep(3)
             else:
-                print('%s already created' % incident_num)
+                print('%s already exists' % incident_num)
+
         sleep(3)
-        # TODO don't sleep if prev request came from cache
+        # TODO: don't sleep if prev request came from cache
 
 
 if __name__ == '__main__':
